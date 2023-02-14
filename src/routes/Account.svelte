@@ -1,7 +1,7 @@
 <script>
     import { onMount } from 'svelte'
     import { supabase } from '$lib/supabaseClient'
-    import { goto } from '$app/navigation';
+    // import { goto } from '$app/navigation';
     import Avatar from './Avatar.svelte';
     export let session;
   
@@ -80,9 +80,9 @@
       }
     }
 
-    const GoTodo = async () => {
-        goto('/todos');
-    }
+    // const GoTodo = async () => {
+    //     goto('/todos');
+    // }
 
   </script>
 
@@ -116,7 +116,7 @@
       <button class="button block" on:click="{signOut}" disabled="{loading}">Sign Out</button>
     </div>
 
-    <div>
-      <button class="button block" on:click={GoTodo} value="Go To TodoList">Go to TodoList</button>
+    <!-- <div>
+      <button class="button block" on:click={GoTodo} value="Go To TodoList">Go to TodoList</button> -->
   </div>
   </form>
